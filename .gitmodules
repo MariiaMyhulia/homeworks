@@ -1,3 +1,6 @@
 [submodule "LabWork1/LabWork1/fe53"]
 	path = LabWork1/LabWork1/fe53
 	url = https://github.com/vdjaguar/fe53.git
+[submodule "LabWork1/test"]
+	path = LabWork1/test
+	url = https://github.com/vdjaguar/fe53.git

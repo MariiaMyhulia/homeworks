@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="assets\css\main_style.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_wrapper">
+    <h1>Форма заявки на работу в зоопарке</h1>
+
+    <div class="form-row">
+        <i class="required">Пожалуйста, заполните форму. Обязательные поля помечены </i>
+    </div>
+<form>
+    <fieldset>
+        <legend>Контактная информация</legend>
+
+        <ul class="wrapper">
+            <li class="form-row">
+                <label for="name" class="required" >Имя</label>
+                <input class="inp" type="text" id="name" required >
+            </li>
+            <li class="form-row">
+                <label for="tel">Телефон</label>
+                <input class="inp" type="text" id="tel">
+            </li>
+            <li class="form-row">
+                <label for="email" class="required" >Email</label>
+                <input class="inp" type="email" id="email" required>
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Персональная информация</legend>
+        <ul class="wrapper">
+            <li class="form-row">
+                <label for="age" class="required" >Возраст</label>
+                <input class="inp" type="number" id="age" required>
+            </li>
+            <li class="form-row">
+                <label for="gen">Пол</label>
+                <select class="inp" name="gen" id="gen">
+                    <option value="male">Мужчина</option>
+                    <option value="female" selected>Женщина</option>
+                </select>
+            </li>
+            <li class="form-row">
+                <label for="txtarea">Перечислите личные качества</label>
+                <textarea class="inp" name="text" id="txtarea"></textarea>
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>Выберите любимых животных</legend>
+        <div class = "box_line">
+            <div class = "elem">
+                <input type="checkbox" id="itm1" name="itm1">
+                <label for="itm1">Зебра</label>
+            </div>
+
+            <div class = "elem">
+                <input type="checkbox" id="itm2" name="itm2">
+                <label for="itm2">Кошка</label>
+            </div>
+            <div class = "elem">
+                <input type="checkbox" id="itm3" name="itm3">
+                <label for="itm3">Анаконда</label>
+            </div>
+            <div class = "elem">
+                <input type="checkbox" id="itm4" name="itm4">
+                <label for="itm4">Человек</label>
+            </div>
+        </div>
+        <div class = "box_line">
+            <div class = "elem">
+                <input type="checkbox" id="itm5" name="itm5">
+                <label for="itm5">Слон</label>
+            </div>
+
+            <div class = "elem">
+                <input type="checkbox" id="itm6" name="itm6">
+                <label for="itm6">Антилопа</label>
+            </div>
+            <div class = "elem">
+                <input type="checkbox" id="itm7" name="itm7">
+                <label for="itm7">Голубь</label>
+            </div>
+            <div class = "elem">
+                <input type="checkbox" id="itm8" name="itm8">
+                <label for="itm8">Краб</label>
+            </div>
+        </div>
+    </fieldset>
+
+   <div class="wrapper">
+      <button type="submit">Отправить информацию</button>
+   </div>
+</form>
+</div>
+</body>
+</html>

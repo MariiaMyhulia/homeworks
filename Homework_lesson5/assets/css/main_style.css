@@ -1,0 +1,64 @@
+h1{
+    text-align: center;
+}
+/*.main_wrapper{*/
+/*    width: 70%;*/
+/*    margin: auto;*/
+/*}*/
+
+.wrapper {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+}
+.form-row {
+    display: flex;
+    /*justify-content: flex-end;*/
+    padding: .5em;
+}
+.form-row > .required:after
+{
+    color: red;
+    content: " *";
+}
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+.form-row > .inp {
+    flex: 2;
+    margin-right: 30%;
+}
+.form-row > .inp, .wrapper > button {
+    padding: .5em;
+}
+.wrapper > button {
+    border: 1px solid gray;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .form-row > .inp {
+        flex: 3;
+    }
+}
+@media screen and (min-width: 992px) {
+    .form-row > .inp {
+        flex: 4;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .form-row > .inp {
+        flex: 5;
+    }
+}
+
+.box_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+.elem{
+    width: 25%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .i{
+            background: #EEDDCD;
+            display: inline-block;
+            padding: .5em;
+        }
+        label.required:after
+        {
+            color: red;
+            content: " *";
+        }
+
+    </style>
+</head>
+<body>
+<div class = "w">
+<div class ="i">Заголовок 1</div>
+<div class ="i">Заголовок 2</div>
+<div class ="i">Заголовок 3</div>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label required" for="username">Username</label>
+    <input type="text" name="username" required="required" class="form-control">
+</div>
+
+
+<i>Курсивное начертание шрифта</i>
+<em>Выделение текста</em>
+
+</body>
+</html>

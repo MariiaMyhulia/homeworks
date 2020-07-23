@@ -1,0 +1,74 @@
+.centr{
+    text-align: center;
+}
+ol.wsnumber1  {
+    list-style: none;/*cancel the default value*/
+    counter-reset: num_elem;/*reset the list counter*/
+    display: block;
+    color:#777;
+}
+ol.wsnumber1 li {
+    margin: 0 0 1em 5em;
+    position:relative;/*positioning inside an element */
+}
+ol.wsnumber1 li::before {
+    background: #fed4aa;
+    color: #fff;
+
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    padding: 5px;
+    line-height: 20px;
+    display: inline-block;
+
+    content: counter(num_elem);/* counter */
+    counter-increment: num_elem;/*counter + 1*/
+
+
+
+    /* position: absolute; */
+    text-align: center;
+
+}
+.indent{
+    margin-left:5%;
+}
+
+:-moz-placeholder {
+    color: gray;
+}
+::-webkit-input-placeholder {
+    color: gray;
+}
+
+.contact_form ul {
+    width:50%;
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+    padding:15px;
+    position:relative;
+}
+.contact_form label {
+    width:150px;
+    margin-top: 5px;
+    display:inline-block;
+    float:left;
+    padding:2%;
+}
+.contact_form input {
+    height:20px;
+    width:250px;
+    padding:5px 8px;
+}
+.contact_form textarea {
+    padding:8px;
+    width:300px;
+}
+.contact_form button {
+    margin-left:18%;
+}

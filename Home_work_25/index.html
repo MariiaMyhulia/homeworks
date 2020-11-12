@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css">
+</head>
+<body>
+<form class = "order_form" action="" method="post">
+    <div class="field">
+        <label for="name">Имя:</label>
+        <input class="order_form_input" type="text" name="name" id="name" placeholder="Имя"/>
+    </div>
+    <div class="field">
+        <label for = "table_num">Номер cтолика:</label>
+        <input class="order_form_input" type="number" name="table_num" id="table_num" placeholder="Номер столика" />
+    </div>
+    <div class="field">
+        <label for="first_meal">Первое:</label>
+        <input class="order_form_input" type="text" name="first_meal" id="first_meal" placeholder="Первое" />
+    </div>
+    <div class="field">
+        <label for="second_meal">Второе:</label>
+        <input class="order_form_input" type="text" name="second_meal" id="second_meal" placeholder="Второе" />
+    </div>
+    <div class="field">
+        <label for="drink">Напиток:</label>
+        <input class="order_form_input" type="text" name="drink" id="drink" placeholder = "Напиток" />
+    </div>
+
+    <div>
+        <button class="button order_form_button" type="button">Заказать</button>
+        <button class="button order_form_button_reset" type="button">Очистить</button>
+    </div>
+</form>
+
+<div class="order">
+    <h2>Заказ клиента</h2>
+    <div class = "order_pay">
+        Еще ничего не заказали
+    </div>
+
+</div>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

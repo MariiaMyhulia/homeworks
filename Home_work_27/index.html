@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\styles.css">
+</head>
+<body>
+<form class = "order_form" action="" method="post">
+    <div id = "radio_element">
+        <p>Тип транзакции:</p>
+        <input class = "radio_element_input" type="radio" id="usd" name="money" value="usd">
+        <label for="usd">USD -> UAH</label><br>
+        <input class = "radio_element_input" type="radio" id="uah" name="money" value="uah">
+        <label for="uah">UAH -> USD</label>
+    </div>
+
+    <div class="field">
+        <label class = "main_label" for="name">Введите сумму:</label>
+        <input class="order_form_input" type="number" name="name" id="name" placeholder="Сумма"/>
+    </div>
+
+
+    <div>
+        <button class="button order_form_button" type="button">Расчитать</button>
+    </div>
+</form>
+
+<div class="order">
+    <h2>Вы получите</h2>
+    <div class = "order_pay">
+        Вы ничего не задали
+    </div>
+
+</div>
+    <script src="assets\js\script.js"></script>
+</body>
+</html>

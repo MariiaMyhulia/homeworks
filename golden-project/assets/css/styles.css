@@ -1,0 +1,233 @@
+/*Fonts
+    font-family: 'montserratregular';
+    font-family: 'montserratbold';
+
+    font-family: 'droid_serifitalic';
+    font-family: 'roboto_slabregular';
+    font-family: 'wisdom_scriptregular';
+    font-family: 'FontAwesome';
+*/
+*{
+    padding: 0;
+    margin: 0;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-size: 100%;
+}
+section{
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.section_banner {
+    background-size: cover;
+    background: url(../img/Tint.jpg) center no-repeat fixed;
+    -khtml-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16%;
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
+}
+nav {
+    align-self: center;
+    margin: 0 13em 0 0;
+}
+ul {
+    display: flex;
+    flex-flow: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    list-style-type: none;
+}
+
+ul li a {
+    font-family: 'montserratregular';
+    font-size: 14px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: .5s;
+}
+
+ul li a:hover {
+    background: #000;
+    color: #fff;
+    transition: .5s
+}
+.logo{
+margin-right: 370px;
+}
+.logo p {
+    font-family: 'wisdom_scriptregular';
+    font-size: 26px;
+    color: #fed136;
+}
+
+.banner{
+    text-align: center;
+}
+
+.banner .banner-text {
+    margin-top: 140px;
+    font-family: 'droid_serifitalic';
+    font-size: 40px;
+    color: #fff;
+
+}
+.banner .banner-main-text {
+    margin-top: 50px;
+    font-family: 'montserratbold';
+    font-size: 75px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.banner .banner-button {
+    margin-top: 43px;
+    margin-bottom: 160px;
+    height: 65px;
+    width: 240px;
+    background-color: rgba(254,209,54,1);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-family: 'montserratbold';
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.banner-button:hover {
+    background-color: rgba(254,209,54,0.8);
+}
+
+
+/*section-service */
+.section-service{
+    background-color: #fff;
+    text-align: center;
+}
+
+.title{
+    padding-top: 116px;
+}
+.title_big{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: 'montserratbold';
+    color: #222;
+}
+.title_small{
+margin-top: 4px;
+    font-family: 'droid_serifitalic';
+    font-size: 16px;
+    color: #929292;
+}
+
+.icon{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #fff
+}
+
+.icon-item{
+    width: 290px;
+    text-align: center;
+    margin-right: 58px;
+}
+
+.icon-item:last-child{
+    margin-right: 0px;
+}
+
+.icon-item img {
+    margin-top: 80px;
+}
+.icon-item_txt{
+    margin-top: 25px;
+    margin-bottom: 120px;
+}
+.icon-item_txt_main{
+    font-size: 18px;
+    font-family: 'montserratbold';
+    color: #313131;
+}
+.icon-item_txt_small{
+    margin-top: 22px;
+    font-size: 14px;
+    color: #9b9b9b;
+    font-family: 'roboto_slabregular';
+}
+/*section-service / */
+
+/*section-portfolio */
+.section-portfolio{
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1055px;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 105px;
+    padding-top: 40px;
+}
+
+
+.portfolio_item{
+    position: relative;
+    max-width: 33.333%;
+    background-color: #fff;
+    width: 290px;
+    height: 390px;
+    margin: 17px;
+    text-align: center;
+}
+
+.portfolio_item_img img {
+    max-width: 100%;
+}
+/* почему в блоке item получилось поставить по центру, а в блоке portfolio нет. margin: 0 auto; только с эти */
+
+.portfolio_item_txt{
+    margin: 0;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.portfolio_item_txt_big{
+    font-family: 'montserratbold';
+    font-size: 18px;
+    color: #333333;
+
+}
+
+.portfolio_item_txt_small{
+    font-family: 'droid_serifitalic';
+    font-size: 14px;
+    color: #868686;
+}
+/*section-portfolio / */
